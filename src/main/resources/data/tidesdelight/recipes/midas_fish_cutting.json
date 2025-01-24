@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "tide:midas_fish"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "tidesdelight:minced_midas_fish"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

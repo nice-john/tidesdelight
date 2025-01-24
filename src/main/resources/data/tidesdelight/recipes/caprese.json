@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "tidesdelight:cheese" },
+    { "item": "farmersdelight:tomato" },
+    { "item": "minecraft:bread" }
+  ],
+  "result": {
+    "item": "tidesdelight:caprese",
+    "count": 1
+  }
+}

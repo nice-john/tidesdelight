@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "tidesdelight:catfish"
+  },
+  "result": "tidesdelight:fried_catfish",
+  "experience": 0.35,
+  "cookingtime": 200
+}
+
+
+

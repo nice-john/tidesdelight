@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "tide:midas_fish"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "tide:obsidian_fragement"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "tidesdelight:smoked_eel" },
+    { "item": "farmersdelight:cooked_rice" },
+    { "item": "farmersdelight:cabbage_leaf" },
+    { "item": "culturaldelights:corn_kernals" },
+    { "item": "culturaldelights:cut_avocado" },
+    { "item": "culturaldelights:cut_cucumber" }
+  ],
+  "result": {
+    "item": "tidesdelight:poke_bowl",
+    "count": 1
+  }
+}
+
+
+
+
