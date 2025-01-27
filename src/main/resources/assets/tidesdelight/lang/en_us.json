@@ -7,5 +7,11 @@
   "item.tidesdelight.cheese": "Cheese",
   "item.tidesdelight.caprese": "Caprese",
   "item.tidesdelight.grouper_caprese": "Grouper Caprese",
-  "item.tidesdelight.grilled_grouper": "Grilled Grouper"
+  "item.tidesdelight.grilled_grouper": "Grilled Grouper",
+  "item.tidesdelight.minced_tuna": "Minced Tuna",
+  "item.tidesdelight.midas_touch_potion": "Potion of Midas Touch",
+  "potion.tidesdelight.midas_touch": "Potion of Midas Touch",
+  "effect.tidesdelight.midas_touch": "Midas Touch",
+  "item.minecraft.potion.effect.midas_touch": "Potion of Midas Touch",
+  "item.minecraft.potion.effect.midas_touch_extended": "Potion of Midas Touch"
 }

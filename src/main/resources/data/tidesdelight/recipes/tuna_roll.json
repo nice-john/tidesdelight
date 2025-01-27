@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "farmersdelight:cooked_rice"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "tidesdelight:minced_tuna"
+    }
+  ],
+  "result": {
+    "item": "tidesdelight:tuna_roll",
+    "count": 1
+  }
+}
+
+

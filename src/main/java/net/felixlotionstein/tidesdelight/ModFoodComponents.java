@@ -47,6 +47,18 @@ public class ModFoodComponents {
             .nutrition(6)         // Amount of hunger restored
             .saturationMod(.9f)   // Saturation value
             .build();
+    public static final FoodProperties MINCED_TUNA = new FoodProperties.Builder()
+            .nutrition(3)         // Amount of hunger restored
+            .saturationMod(.9f)   // Saturation value
+            .build();
+    public static final FoodProperties TUNA_ROLL = new FoodProperties.Builder()
+            .nutrition(12)         // Amount of hunger restored
+            .saturationMod(.6f)   // Saturation value
+            .build();
+    public static final FoodProperties TUNA_ROLL_SLICE = new FoodProperties.Builder()
+            .nutrition(2)         // Amount of hunger restored
+            .saturationMod(.6f)   // Saturation value
+            .build();
     public static final FoodProperties MINCED_MIDAS_FISH = new FoodProperties.Builder()
             .nutrition(1)         // Amount of hunger restored
             .saturationMod(.9f)   // Saturation value

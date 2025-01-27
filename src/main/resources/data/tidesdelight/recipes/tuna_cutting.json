@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "tide:tuna"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "tidesdelight:minced_tuna"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

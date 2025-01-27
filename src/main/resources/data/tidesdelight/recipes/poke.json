@@ -1,7 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    { "item": "tidesdelight:smoked_eel" },
+    {
+      "items": [
+        "tidesdelight:minced_tuna",
+        "farmersdelight:raw_salmon_slice",
+        "tidesdelight:smoked_eel"
+      ]
+    },
     { "item": "farmersdelight:cooked_rice" },
     { "item": "farmersdelight:cabbage_leaf" },
     { "item": "culturaldelights:corn_kernals" },

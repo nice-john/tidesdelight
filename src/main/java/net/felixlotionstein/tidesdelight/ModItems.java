@@ -1,6 +1,8 @@
 package net.felixlotionstein.tidesdelight;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PotionItem;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -53,9 +55,25 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.GRILLED_GROUPER)
                     .stacksTo(64))); // Limit stack size to 1 for food in a bowl
+    public static final RegistryObject<Item> MINCED_TUNA = ITEMS.register("minced_tuna",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.MINCED_TUNA)
+                    .stacksTo(64))); // Limit stack size to 1 for food
+    public static final RegistryObject<Item> TUNA_ROLL = ITEMS.register("tuna_roll",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.TUNA_ROLL)));
+    public static final RegistryObject<Item> TUNA_ROLL_SLICE = ITEMS.register("tuna_roll_slice",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.TUNA_ROLL_SLICE)));
+
     public static final RegistryObject<Item> MINCED_MIDAS_FISH = ITEMS.register("minced_midas_fish",
             () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.MINCED_MIDAS_FISH)
                     .stacksTo(64))); // Limit stack size to 1 for food in a bowl
+
+    //potions
+    public static final RegistryObject<Item> MIDAS_TOUCH_POTION = ITEMS.register("midas_touch_potion",
+            () -> new PotionItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
 }
 
