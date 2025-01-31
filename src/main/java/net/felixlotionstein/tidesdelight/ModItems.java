@@ -1,5 +1,6 @@
 package net.felixlotionstein.tidesdelight;
 
+import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.Rarity;
@@ -35,9 +36,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.SMOKED_EEL)
                     .stacksTo(64))); // Allow stacking up to 64
-    public static final RegistryObject<Item> POKE = ITEMS.register("poke_bowl",
-            () -> new Item(new Item.Properties()
-                    .food(ModFoodComponents.POKE)
+    public static final RegistryObject<Item> POKE_BOWL = ITEMS.register("poke_bowl",
+            () -> new BowlFoodItem(new Item.Properties()
+                    .food(ModFoodComponents.POKE_BOWL)
                     .stacksTo(64))); // Limit stack size to 1 for food in a bowl
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties()
@@ -55,9 +56,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.GRILLED_GROUPER)
                     .stacksTo(64))); // Limit stack size to 1 for food in a bowl
-    public static final RegistryObject<Item> MINCED_TUNA = ITEMS.register("minced_tuna",
+    public static final RegistryObject<Item> TUNA_SLICE = ITEMS.register("tuna_slice",
             () -> new Item(new Item.Properties()
-                    .food(ModFoodComponents.MINCED_TUNA)
+                    .food(ModFoodComponents.TUNA_SLICE)
                     .stacksTo(64))); // Limit stack size to 1 for food
     public static final RegistryObject<Item> TUNA_ROLL = ITEMS.register("tuna_roll",
             () -> new Item(new Item.Properties()
@@ -65,6 +66,9 @@ public class ModItems {
     public static final RegistryObject<Item> TUNA_ROLL_SLICE = ITEMS.register("tuna_roll_slice",
             () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.TUNA_ROLL_SLICE)));
+    public static final RegistryObject<Item> TUNA_STEAK = ITEMS.register("tuna_steak",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.TUNA_STEAK)));
 
     public static final RegistryObject<Item> MINCED_MIDAS_FISH = ITEMS.register("minced_midas_fish",
             () -> new Item(new Item.Properties()

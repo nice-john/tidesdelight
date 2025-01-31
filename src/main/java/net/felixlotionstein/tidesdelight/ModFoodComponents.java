@@ -3,11 +3,14 @@ package net.felixlotionstein.tidesdelight;
 import net.felixlotionstein.tidesdelight.init.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
+import vectorwing.farmersdelight.common.effect.ComfortEffect;
+import vectorwing.farmersdelight.common.effect.NourishmentEffect;
 
 public class ModFoodComponents {
     public static final FoodProperties ANGLERFISH_HOTPOT = new FoodProperties.Builder()
             .nutrition(12)          // Amount of hunger restored
             .saturationMod(.9f)    // Saturation value
+            .effect(() -> new MobEffectInstance(vectorwing.farmersdelight.common.registry.ModEffects.NOURISHMENT.get(), 1200), 1.0f) // Applies Midas Touch for 10 seconds
             .build();
     public static final FoodProperties BARRACUDA_STEAK = new FoodProperties.Builder()
             .nutrition(6)          // Amount of hunger restored
@@ -27,9 +30,10 @@ public class ModFoodComponents {
             .saturationMod(0.7f)   // Saturation value
             .meat()                // Indicates it's a meat item
             .build();
-    public static final FoodProperties POKE = new FoodProperties.Builder()
+    public static final FoodProperties POKE_BOWL = new FoodProperties.Builder()
             .nutrition(14)         // Amount of hunger restored
             .saturationMod(.7f)   // Saturation value
+            .effect(() -> new MobEffectInstance(vectorwing.farmersdelight.common.registry.ModEffects.COMFORT.get(), 600), 1.0f) // Applies Midas Touch for 10 seconds
             .build();
     public static final FoodProperties CHEESE = new FoodProperties.Builder()
             .nutrition(3)         // Amount of hunger restored
@@ -47,7 +51,7 @@ public class ModFoodComponents {
             .nutrition(6)         // Amount of hunger restored
             .saturationMod(.9f)   // Saturation value
             .build();
-    public static final FoodProperties MINCED_TUNA = new FoodProperties.Builder()
+    public static final FoodProperties TUNA_SLICE = new FoodProperties.Builder()
             .nutrition(3)         // Amount of hunger restored
             .saturationMod(.9f)   // Saturation value
             .build();
@@ -58,6 +62,10 @@ public class ModFoodComponents {
     public static final FoodProperties TUNA_ROLL_SLICE = new FoodProperties.Builder()
             .nutrition(2)         // Amount of hunger restored
             .saturationMod(.6f)   // Saturation value
+            .build();
+    public static final FoodProperties TUNA_STEAK = new FoodProperties.Builder()
+            .nutrition(6)         // Amount of hunger restored
+            .saturationMod(.9f)   // Saturation value
             .build();
     public static final FoodProperties MINCED_MIDAS_FISH = new FoodProperties.Builder()
             .nutrition(1)         // Amount of hunger restored

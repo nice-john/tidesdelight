@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "tide:tuna"
+  },
+  "result": "tidesdelight:tuna_steak",
+  "experience": 0.35,
+  "cookingtime": 600
+}
+
+
+
+

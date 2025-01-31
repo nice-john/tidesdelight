@@ -31,6 +31,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import vectorwing.farmersdelight.common.registry.ModCreativeTabs;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Tidesdelight.MODID)
@@ -56,6 +58,7 @@ public class Tidesdelight {
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::addCreative);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
@@ -74,6 +77,35 @@ public class Tidesdelight {
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+    }
+
+    private void setup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ModBrewingRecipes.registerBrewingRecipes();
+        });
+    }
+
+    private void addCreative(BuildCreativeModeTabContentsEvent event)
+    {
+        if (event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
+            event.accept(ModItems.ANGLERFISH_HOTPOT);
+            event.accept(ModItems.FRIED_CATFISH);
+            event.accept(ModItems.SMOKED_EEL);
+            event.accept(ModItems.GRILLED_GROUPER);
+            event.accept(ModItems.GROUPER_CAPRESE);
+            event.accept(ModItems.TUNA_STEAK);
+            event.accept(ModItems.BARRACUDA_STEAK);
+            event.accept(ModItems.BARRACUDA_BURGER);
+            event.accept(ModItems.POKE_BOWL);
+            event.accept(ModItems.CHEESE);
+            event.accept(ModItems.CAPRESE);
+            event.accept(ModItems.MINCED_MIDAS_FISH);
+            event.accept(ModItems.TUNA_SLICE);
+            event.accept(ModItems.TUNA_ROLL);
+            event.accept(ModItems.TUNA_ROLL_SLICE);
+
+        }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -87,17 +119,7 @@ public class Tidesdelight {
 
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
-    private void setup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(() -> {
-            BrewingRecipeRegistry.addRecipe(
-                    new BrewingRecipe(
-                            Ingredient.of(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.AWKWARD)), // Base potion
-                            Ingredient.of(ModItems.MINCED_MIDAS_FISH.get()), // Ingredient
-                            PotionUtils.setPotion(new ItemStack(Items.POTION), ModPotions.MIDAS_TOUCH_POTION.get()) // Resulting potion
-                    )
-            );
-        });
-    }
+
 
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -118,4 +140,5 @@ public class Tidesdelight {
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }
+
 }

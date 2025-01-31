@@ -1,16 +1,10 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "items": [
-        "tidesdelight:minced_tuna",
-        "farmersdelight:raw_salmon_slice",
-        "tidesdelight:smoked_eel"
-      ]
-    },
+    { "tag": "tidesdelight:poke_protein" },
     { "item": "farmersdelight:cooked_rice" },
     { "item": "farmersdelight:cabbage_leaf" },
-    { "item": "culturaldelights:corn_kernals" },
+    { "item": "culturaldelights:corn_kernels" },
     { "item": "culturaldelights:cut_avocado" },
     { "item": "culturaldelights:cut_cucumber" }
   ],

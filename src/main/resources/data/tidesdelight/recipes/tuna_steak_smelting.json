@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tidesdelight:tuna_slice"
+  },
+  "result": "tidesdelight:tuna_steak",
+  "experience": 0.35,
+  "cookingtime": 200
+}
+
+
+

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tide:deep_grouper"
+  },
+  "result": "tidesdelight:grilled_grouper",
+  "experience": 0.35,
+  "cookingtime": 200
+}
+

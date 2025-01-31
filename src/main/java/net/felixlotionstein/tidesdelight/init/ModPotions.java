@@ -11,6 +11,8 @@ public class ModPotions {
     public static final DeferredRegister<Potion> POTIONS = DeferredRegister.create(ForgeRegistries.POTIONS, Tidesdelight.MODID);
 
     public static final RegistryObject<Potion> MIDAS_TOUCH = POTIONS.register("midas_touch",
-            () -> new Potion(new MobEffectInstance(ModEffects.MIDAS_TOUCH.get(), 3600))); // 3 minutes duration
+            () -> new Potion(new MobEffectInstance(ModEffects.MIDAS_TOUCH.get(), 400))); // 3 minutes duration
+    public static final RegistryObject<Potion> MIDAS_TOUCH_EXTENDED = POTIONS.register("midas_touch_extended",
+            () -> new Potion(new MobEffectInstance(ModEffects.MIDAS_TOUCH.get(), 600))); // 30 minutes duration
 }
 

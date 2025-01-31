@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:brewing",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "base": {
+    "item": "minecraft:potion",
+    "nbt": {
+      "Potion": "tidesdelight:midas_touch"
+    }
+  },
+  "result": {
+    "item": "minecraft:potion",
+    "nbt": {
+      "Potion": "tidesdelight:extended_midas_touch"
+    }
+  }
+}

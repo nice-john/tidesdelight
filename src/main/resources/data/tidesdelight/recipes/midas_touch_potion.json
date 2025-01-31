@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:brewing",
+  "ingredient": {
+    "item": "tidesdelight:minced_midas_fish"
+  },
+  "base": {
+    "item": "minecraft:awkward_potion"
+  },
+  "result": {
+    "item": "minecraft:potion",
+    "nbt": {
+      "Potion": "tidesdelight:midas_touch_potion"
+    }
+  }
+}
