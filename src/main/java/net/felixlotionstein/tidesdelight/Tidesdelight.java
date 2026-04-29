@@ -90,6 +90,7 @@ public class Tidesdelight {
     {
         if (event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
             event.accept(ModItems.ANGLERFISH_HOTPOT);
+            event.accept(ModItems.SEAFOOD_PAELLA);
             event.accept(ModItems.FRIED_CATFISH);
             event.accept(ModItems.SMOKED_EEL);
             event.accept(ModItems.GRILLED_GROUPER);
@@ -104,6 +105,10 @@ public class Tidesdelight {
             event.accept(ModItems.TUNA_SLICE);
             event.accept(ModItems.TUNA_ROLL);
             event.accept(ModItems.TUNA_ROLL_SLICE);
+            event.accept(ModItems.TUNA_SALAD);
+            event.accept(ModItems.CRYSTAL_SHRIMP_SCAMPI);
+            event.accept(ModItems.SLICED_SNATCHER_SQUID);
+            event.accept(ModItems.CALAMARI);
 
         }
     }

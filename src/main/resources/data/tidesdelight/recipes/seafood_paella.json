@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:tomato"
+    },
+    {
+      "item": "farmersdelight:rice"
+    },
+    {
+      "item": "tide:fish_slice"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "tidesdelight:seafood_paella"
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

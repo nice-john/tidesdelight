@@ -25,11 +25,12 @@ public class MidasTouchHandler {
         BlockPos pos = event.getPos();
         Level world = (Level) event.getLevel();
         Player player = event.getPlayer(); // Get the player who triggered the event
-
-                world.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
-                event.setCanceled(true); // Cancel the event to prevent any other side effects
-                ItemStack drop = new ItemStack(Items.GOLD_INGOT, 1);
-                Block.popResource(world, pos, drop);
+        if (player.hasEffect(ModEffects.MIDAS_TOUCH.get())) {
+            world.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+            event.setCanceled(true); // Cancel the event to prevent any other side effects
+            ItemStack drop = new ItemStack(Items.GOLD_INGOT, 1);
+            Block.popResource(world, pos, drop);
+        }
 
     }
 }

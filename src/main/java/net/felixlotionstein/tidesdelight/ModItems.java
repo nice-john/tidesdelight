@@ -19,6 +19,8 @@ public class ModItems {
     // Register Anglerfish Hotpot
     public static final RegistryObject<Item> ANGLERFISH_HOTPOT = ITEMS.register("anglerfish_hotpot",
             () -> new ConsumableItem(bowlFoodItem(ModFoodComponents.ANGLERFISH_HOTPOT), true));
+    public static final RegistryObject<Item> SEAFOOD_PAELLA = ITEMS.register("seafood_paella",
+            () -> new ConsumableItem(bowlFoodItem(ModFoodComponents.SEAFOOD_PAELLA), true));
     // Register Barracuda Steak
     public static final RegistryObject<Item> BARRACUDA_STEAK = ITEMS.register("barracuda_steak",
             () -> new Item(new Item.Properties()
@@ -69,6 +71,18 @@ public class ModItems {
     public static final RegistryObject<Item> TUNA_STEAK = ITEMS.register("tuna_steak",
             () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.TUNA_STEAK)));
+    public static final RegistryObject<Item> TUNA_SALAD = ITEMS.register("tuna_salad",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.TUNA_SALAD)));
+    public static final RegistryObject<Item> CRYSTAL_SHRIMP_SCAMPI = ITEMS.register("crystal_shrimp_scampi",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.CRYSTAL_SHRIMP_SCAMPI)));
+    public static final RegistryObject<Item> SLICED_SNATCHER_SQUID = ITEMS.register("sliced_snatcher_squid",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.SLICED_SNATCHER_SQUID)));
+    public static final RegistryObject<Item> CALAMARI = ITEMS.register("calamari",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodComponents.CALAMARI)));
 
     public static final RegistryObject<Item> MINCED_MIDAS_FISH = ITEMS.register("minced_midas_fish",
             () -> new Item(new Item.Properties()

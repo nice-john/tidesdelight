@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "tidesdelight:sliced_snatcher_squid"
+  },
+  "result": "tidesdelight:calamari",
+  "experience": 0.35,
+  "cookingtime": 120
+}
+

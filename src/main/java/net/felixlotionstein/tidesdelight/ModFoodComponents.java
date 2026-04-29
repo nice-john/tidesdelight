@@ -12,6 +12,11 @@ public class ModFoodComponents {
             .saturationMod(.9f)    // Saturation value
             .effect(() -> new MobEffectInstance(vectorwing.farmersdelight.common.registry.ModEffects.NOURISHMENT.get(), 1200), 1.0f) // Applies Midas Touch for 10 seconds
             .build();
+    public static final FoodProperties SEAFOOD_PAELLA = new FoodProperties.Builder()
+            .nutrition(7)          // Amount of hunger restored
+            .saturationMod(.5f)    // Saturation value
+            .effect(() -> new MobEffectInstance(vectorwing.farmersdelight.common.registry.ModEffects.NOURISHMENT.get(), 1200), 1.0f) // Applies Midas Touch for 10 seconds
+            .build();
     public static final FoodProperties BARRACUDA_STEAK = new FoodProperties.Builder()
             .nutrition(6)          // Amount of hunger restored
             .saturationMod(.9f)   // Saturation value
@@ -66,6 +71,22 @@ public class ModFoodComponents {
     public static final FoodProperties TUNA_STEAK = new FoodProperties.Builder()
             .nutrition(6)         // Amount of hunger restored
             .saturationMod(.9f)   // Saturation value
+            .build();
+    public static final FoodProperties TUNA_SALAD = new FoodProperties.Builder()
+            .nutrition(9)         // Amount of hunger restored
+            .saturationMod(.9f)   // Saturation value
+            .build();
+    public static final FoodProperties CRYSTAL_SHRIMP_SCAMPI = new FoodProperties.Builder()
+            .nutrition(8)         // Amount of hunger restored
+            .saturationMod(.4f)   // Saturation value
+            .build();
+    public static final FoodProperties SLICED_SNATCHER_SQUID = new FoodProperties.Builder()
+            .nutrition(1)         // Amount of hunger restored
+            .saturationMod(.1f)   // Saturation value
+            .build();
+    public static final FoodProperties CALAMARI = new FoodProperties.Builder()
+            .nutrition(4)         // Amount of hunger restored
+            .saturationMod(.3f)   // Saturation value
             .build();
     public static final FoodProperties MINCED_MIDAS_FISH = new FoodProperties.Builder()
             .nutrition(1)         // Amount of hunger restored
