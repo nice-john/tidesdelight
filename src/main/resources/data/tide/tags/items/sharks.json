@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tide:great_white_shark",
+    "tide:bull_shark",
+    "tide:sand_tiger_shark",
+    "tide:shadow_shark"
+  ]
+}

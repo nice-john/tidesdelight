@@ -109,6 +109,8 @@ public class Tidesdelight {
             event.accept(ModItems.CRYSTAL_SHRIMP_SCAMPI);
             event.accept(ModItems.SLICED_SNATCHER_SQUID);
             event.accept(ModItems.CALAMARI);
+            event.accept(ModItems.SHARK_FIN);
+            event.accept(ModItems.SHARK_FIN_SOUP);
 
         }
     }

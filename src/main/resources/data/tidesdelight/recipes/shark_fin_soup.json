@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "tidesdelight:shark_fin"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "tidesdelight:shark_fin_soup"
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

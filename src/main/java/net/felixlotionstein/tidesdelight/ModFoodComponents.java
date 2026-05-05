@@ -88,6 +88,11 @@ public class ModFoodComponents {
             .nutrition(4)         // Amount of hunger restored
             .saturationMod(.3f)   // Saturation value
             .build();
+    public static final FoodProperties SHARK_FIN_SOUP = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationMod(.2f)
+            .effect(() -> new MobEffectInstance(vectorwing.farmersdelight.common.registry.ModEffects.NOURISHMENT.get(), 1200), 1.0f)
+            .build();
     public static final FoodProperties MINCED_MIDAS_FISH = new FoodProperties.Builder()
             .nutrition(1)         // Amount of hunger restored
             .saturationMod(.9f)   // Saturation value

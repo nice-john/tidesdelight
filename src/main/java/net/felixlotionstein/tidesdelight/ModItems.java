@@ -89,6 +89,12 @@ public class ModItems {
                     .food(ModFoodComponents.MINCED_MIDAS_FISH)
                     .stacksTo(64))); // Limit stack size to 1 for food in a bowl
 
+    public static final RegistryObject<Item> SHARK_FIN = ITEMS.register("shark_fin",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(64)));
+    public static final RegistryObject<Item> SHARK_FIN_SOUP = ITEMS.register("shark_fin_soup",
+            () -> new ConsumableItem(bowlFoodItem(ModFoodComponents.SHARK_FIN_SOUP), true));
+
     //potions
     public static final RegistryObject<Item> MIDAS_TOUCH_POTION = ITEMS.register("midas_touch_potion",
             () -> new PotionItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
