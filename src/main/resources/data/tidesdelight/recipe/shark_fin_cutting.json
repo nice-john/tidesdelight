@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "tag": "tide:sharks"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "tidesdelight:shark_fin"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

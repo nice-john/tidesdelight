@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:milk_bucket"
+  },
+  "result": {
+    "id": "tidesdelight:cheese"
+  },
+  "experience": 0.35,
+  "cookingtime": 200
+}

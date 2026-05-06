@@ -1,7 +1,7 @@
 package net.felixlotionstein.tidesdelight;
 
-import net.minecraft.world.item.BowlFoodItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.Rarity;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -34,9 +34,10 @@ public class ModItems {
                     .food(ModFoodComponents.SMOKED_EEL)
                     .stacksTo(64)));
     public static final DeferredItem<Item> POKE_BOWL = ITEMS.register("poke_bowl",
-            () -> new BowlFoodItem(new Item.Properties()
+            () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.POKE_BOWL)
-                    .stacksTo(64)));
+                    .craftRemainder(Items.BOWL)
+                    .stacksTo(16)));
     public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties()
                     .food(ModFoodComponents.CHEESE)

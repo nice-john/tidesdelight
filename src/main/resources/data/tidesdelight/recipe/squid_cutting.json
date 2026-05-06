@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "tide:snatcher_squid"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "tidesdelight:sliced_snatcher_squid"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

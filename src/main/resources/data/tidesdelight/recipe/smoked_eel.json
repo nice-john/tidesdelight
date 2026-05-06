@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "tide:cave_eel"
+  },
+  "result": {
+    "id": "tidesdelight:smoked_eel"
+  },
+  "experience": 0.35,
+  "cookingtime": 100
+}
+
+
+

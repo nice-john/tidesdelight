@@ -33,13 +33,13 @@ side = "BOTH"
 [[dependencies."${mod_id}"]]
 modId = "culturaldelights"
 type = "required"
-versionRange = "[0.20,)"
+versionRange = "[0.17,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies."${mod_id}"]]
 modId = "tide"
 type = "required"
-versionRange = "[3.0,)"
+versionRange = "[2.0,)"
 ordering = "NONE"
 side = "BOTH"

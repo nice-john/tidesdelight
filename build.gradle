@@ -3,7 +3,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.62'
+    id 'net.neoforged.moddev' version '2.0.78'
 }
 
 version = mod_version
@@ -68,6 +68,7 @@ dependencies {
     implementation "curse.maven:farmersdelight-398521:8007613"
     implementation "curse.maven:culturalsdelight-574622:7503914"
     implementation "curse.maven:tide-884685:7586281"
+    implementation "curse.maven:cloth-config-348521:5729127"
 }
 
 tasks.named('processResources', ProcessResources).configure {

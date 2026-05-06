@@ -34,7 +34,6 @@ public class Tidesdelight {
     public Tidesdelight(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
-        modEventBus.addListener(this::registerBrewing);
 
         ModItems.ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
@@ -42,6 +41,7 @@ public class Tidesdelight {
         ModPotions.POTIONS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.addListener(this::registerBrewing);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -58,7 +58,7 @@ public class Tidesdelight {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
+        if (event.getTab() == ModCreativeTabs.TAB_FARMERS_DELIGHT.get()) {
             event.accept(ModItems.ANGLERFISH_HOTPOT);
             event.accept(ModItems.SEAFOOD_PAELLA);
             event.accept(ModItems.FRIED_CATFISH);

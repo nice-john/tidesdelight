@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "tide:tuna"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "tidesdelight:tuna_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

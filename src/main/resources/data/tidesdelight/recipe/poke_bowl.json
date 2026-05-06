@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "tag": "tidesdelight:poke_protein" },
+    { "item": "farmersdelight:cooked_rice" },
+    { "item": "farmersdelight:cabbage_leaf" },
+    { "item": "culturaldelights:corn_kernels" },
+    { "item": "culturaldelights:cut_avocado" },
+    { "item": "culturaldelights:cut_cucumber" }
+  ],
+  "result": {
+    "id": "tidesdelight:poke_bowl",
+    "count": 1
+  }
+}
+
+
+
+

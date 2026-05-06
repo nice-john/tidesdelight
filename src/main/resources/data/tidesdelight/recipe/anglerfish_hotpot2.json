@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "meals",
+  "ingredients": [
+      {
+        "item": "minecraft:carrot"
+      },
+      {
+        "tag": "tidesdelight:anglerfish"
+      },
+      {
+        "item": "farmersdelight:onion"
+      },
+      {
+        "item": "farmersdelight:raw_pasta"
+      }
+    ],
+  "result": {
+    "id": "tidesdelight:anglerfish_hotpot",
+    "count": 1
+  },
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 200
+}

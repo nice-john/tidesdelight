@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "tag": "farmersdelight:cheese" },
+    { "item": "tidesdelight:grilled_grouper" },
+    { "item": "farmersdelight:tomato" },
+    { "item": "minecraft:bread" }
+  ],
+  "result": {
+    "id": "tidesdelight:grouper_caprese",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "tag": "tidesdelight:anglerfish"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "farmersdelight:raw_pasta"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "tidesdelight:anglerfish_hotpot"
+  },
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  }
+}
