@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    { "tag": "tidesdelight:tuna_steak" },
+    { "tag": "tidesdelight:cooked_tuna" },
     { "item": "culturaldelights:cut_cucumber" },
-    { "item": "farmerdelight:onion" }
+    { "item": "farmersdelight:onion" }
   ],
   "result": {
     "item": "tidesdelight:tuna_salad",
