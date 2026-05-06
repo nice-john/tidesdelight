@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "tide:obsidian_pike"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "tide:obsidian_fragment"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}
